@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_compile_options(-Wall -Wextra)
 
 include_directories(
-    rv32Machine
+    rv32vm
     os/
     os/hal
     os/common
@@ -33,7 +33,7 @@ file(GLOB_RECURSE SOURCES
     "os/main.cpp"
     "os/*.cpp"
     "os/*.S"
-    "rv32Machine/*.cpp"
+    "rv32vm/*.cpp"
 )
 
 add_executable(rv32umos ${SOURCES})
